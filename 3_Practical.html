@@ -1,0 +1,109 @@
+// 1. Window Object Ex:-
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Object</title>
+</head>
+
+<body>
+
+<h3>Window Object Example</h3>
+
+<button onclick="showMessage()">Click Me
+</button>
+
+<script>
+
+function showMessage() {
+    alert ("Hello, This is window alert");
+}
+
+</script>
+
+</body>
+</html>
+
+// 2. Navigator Object Ex:-
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Navigator Object</h3>
+
+<button onclick="getBrowserInfo()">
+Show Info
+</button>
+
+<p id="demo"></p>
+
+<script>
+
+function getBrowserInfo() {
+document.getElementById("demo")
+.innerHTML = "Browser Name: "
++ navigator.appName + "<br>" +
+"Browser Version: " +
+navigator.appVersion;
+}
+
+</script>
+
+</body>
+</html>
+
+// 3.Screen Object Ex:-
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body>
+
+<h3>Screen Object</h3>
+
+<button onclick="getScreenSize()">Get Screen Size
+</button>
+
+<p id="screen"></p>
+
+<script>
+
+function getScreenSize() {
+document.getElementById("screen").innerHTML =
+"width: " + screen.width + "<br>" +
+"height: " + screen.height;
+}
+
+</script>
+
+</body>
+</html>
+
+// 4. History Object Ex:-
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h3>History Object</h3>
+
+<button onclick="goBack()">Go Back
+</button>
+
+<script>
+
+function goBack() {
+    history.back();
+}
+
+</script>
+
+</body>
+
+</html>
