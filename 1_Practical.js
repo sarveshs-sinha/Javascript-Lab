@@ -8,8 +8,8 @@
 let name = "Sarvesh";
 let age = 21;
 
-console.log("Name : ", name);
-console.log("Age : ", age);
+console.log("Name is : ", name);
+console.log("Age is : ", age);
 
 
 // ii) Addition using variables :-
