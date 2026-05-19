@@ -55,3 +55,32 @@
 
 </body>
 </html>
+
+//getElementsByName
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>getElementsByName</title>
+</head>
+<body>
+
+    <input type="text" name="username" value="Sarvesh">
+
+    <button onclick="changeValue()">Click</button>
+
+    <script>
+
+        function changeValue() {
+
+            let data =
+            document.getElementsByName("username");
+
+            data[0].value = "Name Changed";
+
+        }
+
+    </script>
+
+</body>
+</html>
