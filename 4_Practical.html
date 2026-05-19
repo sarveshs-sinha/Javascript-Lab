@@ -84,3 +84,34 @@
 
 </body>
 </html>
+
+//getElementsByTagName
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>getElementsByTagName</title>
+</head>
+<body>
+
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+
+    <button onclick="changeBackground()">Click</button>
+
+    <script>
+
+        function changeBackground() {
+
+            let data =
+            document.getElementsByTagName("h2");
+
+            data[0].style.backgroundColor = "yellow";
+            data[1].style.backgroundColor = "lightgreen";
+
+        }
+
+    </script>
+
+</body>
+</html>
