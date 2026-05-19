@@ -1,0 +1,57 @@
+//getElementById
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>getElementById</title>
+</head>
+<body>
+
+    <h1 id="heading">Hello World</h1>
+
+    <button onclick="changeText()">Click</button>
+
+    <script>
+
+        function changeText() {
+
+            document.getElementById("heading").innerHTML =
+            "Text Changed";
+
+        }
+
+    </script>
+
+</body>
+</html>
+
+//getElementsByClassName
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>getElementsByClassName</title>
+</head>
+<body>
+
+    <p class="demo">First Paragraph</p>
+    <p class="demo">Second Paragraph</p>
+
+    <button onclick="changeColor()">Click</button>
+
+    <script>
+
+        function changeColor() {
+
+            let data =
+            document.getElementsByClassName("demo");
+
+            data[0].style.color = "red";
+            data[1].style.color = "blue";
+
+        }
+
+    </script>
+
+</body>
+</html>
