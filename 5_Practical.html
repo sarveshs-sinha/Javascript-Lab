@@ -77,3 +77,32 @@
 
 </body>
 </html>
+
+// 4. innerHTML Example
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>innerHTML Example</title>
+</head>
+<body>
+
+    <h2 id="demo">Hello</h2>
+
+    <button onclick="changeContent()">
+        Click Here
+    </button>
+
+    <script>
+
+        function changeContent() {
+
+            document.getElementById("demo").innerHTML =
+            "Content Changed";
+
+        }
+
+    </script>
+
+</body>
+</html>
